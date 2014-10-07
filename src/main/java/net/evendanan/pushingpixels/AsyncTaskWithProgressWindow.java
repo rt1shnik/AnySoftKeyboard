@@ -21,7 +21,7 @@ import android.app.Dialog;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.lang.ref.WeakReference;
 

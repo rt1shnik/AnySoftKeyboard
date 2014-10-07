@@ -3,7 +3,7 @@ package com.anysoftkeyboard.ui.settings.setup;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 public abstract class WizardPageBaseFragment extends Fragment {
 

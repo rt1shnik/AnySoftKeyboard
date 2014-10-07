@@ -455,7 +455,7 @@
   <string name="user_dict_settings_add_dialog_title">Añadir al diccionario</string>
   <string name="user_dict_settings_edit_dialog_title">Editar texto</string>
   <string name="user_dict_backup_success_title">¡Copia de seguridad hecha correctamente!</string>
-  <string name="user_dict_backup_success_text">Tus palabras se han almacenado satisfactoriamente en /Android/data/com.menny.android.anysoftkeyboard/files/
+  <string name="user_dict_backup_success_text">Tus palabras se han almacenado satisfactoriamente en /Android/data/com.android.marrowbone.anysoftboard/files/
     </string>
   <string name="user_dict_backup_fail_title">¡Copia de seguridad falló!</string>
   <string name="user_dict_backup_fail_text">¡No se puede almacenar sus archivos! ¿Existe almacenamiento disponible?</string>

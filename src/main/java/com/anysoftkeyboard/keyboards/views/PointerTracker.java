@@ -23,7 +23,7 @@ import android.view.MotionEvent;
 import com.anysoftkeyboard.keyboards.AnyKeyboard.AnyKey;
 import com.anysoftkeyboard.keyboards.Keyboard.Key;
 import com.anysoftkeyboard.keyboards.views.AnyKeyboardBaseView.UIHandler;
-import com.menny.android.anysoftkeyboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.AnyApplication;
 
 public class PointerTracker {
     private static final String TAG = "PointerTracker";

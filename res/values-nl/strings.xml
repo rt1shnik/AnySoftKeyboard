@@ -540,7 +540,7 @@ karakter, volledig indrukken verwijderd laatste woord
   <string name="user_dict_settings_empty_text">U heeft geen woorden in de gebruikerswoordenlijst. U kunt nu uw eerste woord toevoegen.</string>
   <string name="user_dict_backup_success_title">Backup klaar!</string>
   <string name="user_dict_backup_success_text">Uw woorden zijn met succes opgeslagen in apparaatopslag in 
-/Android/data/com.menny.android.anysoftkeyboard/files/
+/Android/data/com.android.marrowbone.anysoftboard/files/
     </string>
   <string name="user_dict_backup_fail_title">Backup mislukt!</string>
   <string name="user_dict_backup_fail_text">Kan bestanden niet opslaan! Is opslag beschikbaar?</string>

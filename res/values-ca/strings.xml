@@ -546,7 +546,7 @@
   <string name="user_dict_settings_empty_text">No teniu cap mot en el diccionari de l\'usuari. Ara podeu afegir les vostres primeres paraules.</string>
   <string name="user_dict_backup_success_title">Còpia finalitzada!</string>
   <string name="user_dict_backup_success_text">S\'han desat correctament les paraules del vostre diccionari a
-/Android/data/com.menny.android.anysoftkeyboard/files/</string>
+/Android/data/com.android.marrowbone.anysoftboard/files/</string>
   <string name="user_dict_backup_fail_title">Còpia errònia!</string>
   <string name="user_dict_backup_fail_text">No es pot crear una còpia de seguretat! Teniu prou espai disponible?</string>
   <string name="user_dict_backup_fail_text_with_error">Ha fallat en desar les paraules a causa de: <xliff:g id="error">%s</xliff:g>

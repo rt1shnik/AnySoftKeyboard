@@ -291,7 +291,7 @@
   <string name="user_dict_settings_edit_dialog_title">Редактирай думата</string>
   <string name="user_dict_settings_empty_text">Нямате никакви думи в потребителския речник. Можете да добавяте думи през менюто.</string>
   <string name="user_dict_backup_success_title">Успешно архивиране!</string>
-  <string name="user_dict_backup_success_text">Вашите думи са успешно съхранени в /Android/data/com.menny.android.anysoftkeyboard/files/</string>
+  <string name="user_dict_backup_success_text">Вашите думи са успешно съхранени в /Android/data/com.android.marrowbone.anysoftboard/files/</string>
   <string name="user_dict_backup_fail_title">Неуспешно архивиране!</string>
   <string name="user_dict_backup_fail_text">Файловете не могат да бъдат записани! Имате ли свободно място?</string>
   <string name="user_dict_restore_success_title">Успешно възстановяване!</string>

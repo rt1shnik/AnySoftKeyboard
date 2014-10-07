@@ -23,7 +23,7 @@ import android.preference.Preference;
 import com.anysoftkeyboard.addons.AddOn;
 import com.anysoftkeyboard.theme.KeyboardTheme;
 import com.anysoftkeyboard.theme.KeyboardThemeFactory;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
 

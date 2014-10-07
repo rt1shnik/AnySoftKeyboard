@@ -21,7 +21,7 @@ import android.content.Context;
 import com.anysoftkeyboard.dictionaries.content.ContactsDictionary;
 import com.anysoftkeyboard.dictionaries.sqlite.AutoDictionary;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.AnyApplication;
 
 public class DictionaryFactory {
 

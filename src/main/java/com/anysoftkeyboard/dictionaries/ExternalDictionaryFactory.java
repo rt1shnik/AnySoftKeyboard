@@ -22,7 +22,7 @@ import android.util.AttributeSet;
 import com.anysoftkeyboard.addons.AddOn;
 import com.anysoftkeyboard.addons.AddOnsFactory;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,7 +59,7 @@ public class ExternalDictionaryFactory extends AddOnsFactory<DictionaryAddOnAndB
     private final HashMap<String, DictionaryAddOnAndBuilder> mBuildersByLocale = new HashMap<String, DictionaryAddOnAndBuilder>();
 
     private ExternalDictionaryFactory() {
-        super(TAG, "com.menny.android.anysoftkeyboard.DICTIONARY", "com.menny.android.anysoftkeyboard.dictionaries",
+        super(TAG, "com.android.marrowbone.anysoftboard.DICTIONARY", "com.android.marrowbone.anysoftboard.dictionaries",
                 "Dictionaries", "Dictionary",
                 R.xml.dictionaries, true);
     }

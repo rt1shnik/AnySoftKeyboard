@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.menny.android.anysoftkeyboard;
+package com.android.marrowbone.anysoftboard;
 
 import android.app.Activity;
 import android.content.Intent;

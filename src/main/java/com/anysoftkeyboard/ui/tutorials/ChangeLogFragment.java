@@ -31,8 +31,8 @@ import android.widget.TextView;
 
 import com.anysoftkeyboard.ui.settings.MainFragment;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.BuildConfig;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
 import net.evendanan.pushingpixels.PassengerFragment;

@@ -31,8 +31,8 @@ import android.widget.TextView;
 import com.anysoftkeyboard.keyboards.KeyboardFactory;
 import com.anysoftkeyboard.theme.KeyboardTheme;
 import com.anysoftkeyboard.theme.KeyboardThemeFactory;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.EdgeEffectHacker;
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;

@@ -23,7 +23,7 @@ import com.anysoftkeyboard.WordComposer;
 import com.anysoftkeyboard.dictionaries.sqlite.AbbreviationsDictionary;
 import com.anysoftkeyboard.utils.IMEUtil;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -42,9 +42,9 @@ import com.anysoftkeyboard.keyboards.Keyboard.Row;
 import com.anysoftkeyboard.quicktextkeys.QuickTextKey;
 import com.anysoftkeyboard.theme.KeyboardTheme;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.R;
 
 public class AnyKeyboardView extends AnyKeyboardBaseView {
 

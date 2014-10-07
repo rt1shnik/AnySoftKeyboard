@@ -4,7 +4,7 @@ AnySoftKeyboard
 
 Android (f/w 1.5+) on screen keyboard for multiple languages.  
 This application is also available in the Android Play Store, and it is recommended to download it from there:  
-[Here](http://market.android.com/details?id=com.menny.android.anysoftkeyboard)  
+[Here](http://market.android.com/details?id=com.android.marrowbone.anysoftboard)
 More on AnySoftKeyboard can be found [here](http://softkeyboard.googlecode.com)
 
 # Features

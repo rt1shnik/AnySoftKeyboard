@@ -21,7 +21,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import com.anysoftkeyboard.addons.AddOnsFactory;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.util.ArrayList;
 

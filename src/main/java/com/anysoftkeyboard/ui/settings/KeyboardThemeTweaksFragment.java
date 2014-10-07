@@ -20,7 +20,7 @@ package com.anysoftkeyboard.ui.settings;
 import android.os.Bundle;
 import android.support.v4.preference.PreferenceFragment;
 
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 public class KeyboardThemeTweaksFragment extends PreferenceFragment {
 

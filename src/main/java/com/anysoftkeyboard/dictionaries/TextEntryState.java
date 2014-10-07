@@ -21,8 +21,8 @@ import android.text.format.DateFormat;
 
 import com.anysoftkeyboard.keyboards.Keyboard.Key;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.BuildConfig;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

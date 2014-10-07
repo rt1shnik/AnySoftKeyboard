@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import com.anysoftkeyboard.ui.settings.KeyboardAddOnSettingsFragment;
 import com.anysoftkeyboard.ui.settings.KeyboardThemeSelectorFragment;
 import com.anysoftkeyboard.ui.settings.MainSettingsActivity;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
 

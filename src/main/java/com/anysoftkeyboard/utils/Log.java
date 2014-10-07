@@ -21,8 +21,8 @@ import android.os.Build;
 import android.support.annotation.NonNull;
 
 import com.anysoftkeyboard.ui.dev.DeveloperUtils;
-import com.menny.android.anysoftkeyboard.BuildConfig;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
 
 import java.util.ArrayList;
 

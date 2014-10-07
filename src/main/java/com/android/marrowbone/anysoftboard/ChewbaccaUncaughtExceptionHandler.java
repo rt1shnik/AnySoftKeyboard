@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.menny.android.anysoftkeyboard;
+package com.android.marrowbone.anysoftboard;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -25,9 +25,12 @@ import android.os.Parcelable;
 import android.support.v4.app.NotificationCompat;
 import android.text.format.DateFormat;
 
+import com.android.marrowbone.anysoftboard.AnyApplication;
 import com.anysoftkeyboard.ui.SendBugReportUiActivity;
 import com.anysoftkeyboard.ui.dev.DeveloperUtils;
 import com.anysoftkeyboard.utils.Log;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.io.File;
 import java.lang.Thread.UncaughtExceptionHandler;

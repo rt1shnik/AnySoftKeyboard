@@ -432,7 +432,7 @@
   <string name="user_dict_settings_edit_dialog_title">تعديل الكلمة</string>
   <string name="user_dict_settings_empty_text">قاموس المستخدم فارغ. أضف كلمات من القائمة</string>
   <string name="user_dict_backup_success_title">تم النسخ الإحتياطي</string>
-  <string name="user_dict_backup_success_text">تم حفظ كلماتك في ذاكرة الجهاز بنجاح في الرابط /Android/data/com.menny.android.anysoftkeyboard/files/</string>
+  <string name="user_dict_backup_success_text">تم حفظ كلماتك في ذاكرة الجهاز بنجاح في الرابط /Android/data/com.android.marrowbone.anysoftboard/files/</string>
   <string name="user_dict_backup_fail_title">فشل النسخ الإحتياطي </string>
   <string name="user_dict_backup_fail_text">ليس بإمكانك تخزين ملفاتك ! هل التخزين متوفر ؟</string>
   <string name="user_dict_backup_fail_text_with_error">فشل حفظ الكلمات للأسباب التالية: </string>

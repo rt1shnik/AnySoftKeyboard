@@ -461,7 +461,7 @@ Balról jobbra: nyelv-váltás; jobbról balra: szimbólumok.</string>
   <string name="user_dict_settings_empty_text">Nincsenek szavak a szótáradban. A menü segítségével felvehetsz párat.</string>
   <string name="user_dict_backup_success_title">Biztonsági mentés kész!</string>
   <string name="user_dict_backup_success_text">Sikeresen letároltad a szavakat a készülékedre:
-        /Android/data/com.menny.android.anysoftkeyboard/files/
+        /Android/data/com.android.marrowbone.anysoftboard/files/
     </string>
   <string name="user_dict_backup_fail_title">Biztonsági mentés sikertelen!</string>
   <string name="user_dict_backup_fail_text">Nem sikerült menteni a file-okat. Van elérhető tároló?</string>

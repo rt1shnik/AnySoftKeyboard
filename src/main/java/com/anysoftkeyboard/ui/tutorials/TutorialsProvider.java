@@ -30,9 +30,9 @@ import android.preference.PreferenceManager;
 import com.anysoftkeyboard.ui.dev.DeveloperUtils;
 import com.anysoftkeyboard.ui.settings.MainSettingsActivity;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.BuildConfig;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
 

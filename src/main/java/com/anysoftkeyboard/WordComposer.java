@@ -19,7 +19,7 @@ package com.anysoftkeyboard;
 import com.anysoftkeyboard.dictionaries.content.AndroidUserDictionary;
 import com.anysoftkeyboard.keyboards.views.AnyKeyboardBaseView;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
 
 import java.util.ArrayList;
 import java.util.Arrays;

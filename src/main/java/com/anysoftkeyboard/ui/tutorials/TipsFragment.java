@@ -34,8 +34,8 @@ import android.widget.CompoundButton;
 
 import com.anysoftkeyboard.ui.settings.MainFragment;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
 import net.evendanan.pushingpixels.PassengerFragment;

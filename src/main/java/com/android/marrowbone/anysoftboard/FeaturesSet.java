@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-package com.menny.android.anysoftkeyboard;
+package com.android.marrowbone.anysoftboard;
 
+
+import com.android.marrowbone.anysoftboard.BuildConfig;
 
 public class FeaturesSet {
 

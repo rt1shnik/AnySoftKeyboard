@@ -24,8 +24,8 @@ import android.view.animation.AnimationUtils;
 import com.anysoftkeyboard.Configuration.AnimationsLevel;
 import com.anysoftkeyboard.api.KeyCodes;
 import com.anysoftkeyboard.keyboards.views.AnyKeyboardView;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 public class LayoutSwitchAnimationListener implements
         android.view.animation.Animation.AnimationListener, OnSharedPreferenceChangeListener {

@@ -27,7 +27,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 public abstract class FragmentChauffeurActivity extends ActionBarActivity {
 

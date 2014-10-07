@@ -492,7 +492,7 @@
   <string name="user_dict_settings_empty_text">Você não tem quaisquer palavras no dicionário de utilizador. Pode adicionar uma agora.</string>
   <string name="user_dict_backup_success_title">Cópia de segurança efetuada!</string>
   <string name="user_dict_backup_success_text">As palavras foram gravadas no armazenamento do seu dispositivo e na pasta
-        /Android/data/com.menny.android.anysoftkeyboard/files/
+        /Android/data/com.android.marrowbone.anysoftboard/files/
     </string>
   <string name="user_dict_backup_fail_title">Falha ao copiar!</string>
   <string name="user_dict_backup_fail_text">Não foi possível gravar o ficheiro. Possui um cartão SD?</string>

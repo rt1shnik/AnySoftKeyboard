@@ -31,7 +31,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.AsyncTaskWithProgressWindow;
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;

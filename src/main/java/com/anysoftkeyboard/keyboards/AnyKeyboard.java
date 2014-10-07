@@ -35,8 +35,8 @@ import com.anysoftkeyboard.quicktextkeys.QuickTextKey;
 import com.anysoftkeyboard.quicktextkeys.QuickTextKeyFactory;
 import com.anysoftkeyboard.utils.Log;
 import com.anysoftkeyboard.utils.Workarounds;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 import org.xmlpull.v1.XmlPullParserException;
 

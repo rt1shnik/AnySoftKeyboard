@@ -46,8 +46,8 @@ import com.anysoftkeyboard.dictionaries.WordsCursor;
 import com.anysoftkeyboard.keyboards.KeyboardAddOnAndBuilder;
 import com.anysoftkeyboard.keyboards.KeyboardFactory;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.AsyncTaskWithProgressWindow;
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;

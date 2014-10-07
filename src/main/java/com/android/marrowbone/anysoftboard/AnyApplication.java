@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.menny.android.anysoftkeyboard;
+package com.android.marrowbone.anysoftboard;
 
 
 import android.app.Application;
@@ -32,6 +32,8 @@ import com.anysoftkeyboard.devicespecific.DeviceSpecific;
 import com.anysoftkeyboard.devicespecific.StrictModeAble;
 import com.anysoftkeyboard.ui.tutorials.TutorialsProvider;
 import com.anysoftkeyboard.utils.Log;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.frankenrobot.Diagram;
 import net.evendanan.frankenrobot.FrankenRobot;
@@ -76,11 +78,11 @@ public class AnyApplication extends Application implements OnSharedPreferenceCha
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         ((ConfigurationImpl) msConfig).onSharedPreferenceChanged(sharedPreferences, key);
-        //should we disable the Settings App? com.menny.android.anysoftkeyboard.LauncherSettingsActivity
+        //should we disable the Settings App? com.android.marrowbone.anysoftboard.LauncherSettingsActivity
         if (key.equals(getString(R.string.settings_key_show_settings_app))) {
             PackageManager pm = getPackageManager();
             boolean showApp = sharedPreferences.getBoolean(key, getResources().getBoolean(R.bool.settings_default_show_settings_app));
-            pm.setComponentEnabledSetting(new ComponentName(getApplicationContext(), com.menny.android.anysoftkeyboard.LauncherSettingsActivity.class),
+            pm.setComponentEnabledSetting(new ComponentName(getApplicationContext(), LauncherSettingsActivity.class),
                     showApp ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED : PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
                     PackageManager.DONT_KILL_APP);
         }

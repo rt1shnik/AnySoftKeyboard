@@ -10,7 +10,7 @@ import android.util.SparseIntArray;
 import android.util.TypedValue;
 
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.AnyApplication;
 
 import java.util.ArrayList;
 import java.util.List;

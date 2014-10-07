@@ -21,11 +21,11 @@ import android.app.backup.BackupAgentHelper;
 import android.app.backup.BackupDataInputStream;
 import android.app.backup.SharedPreferencesBackupHelper;
 import android.text.TextUtils;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 @TargetApi(8)
 public class AnyBackupAgent extends BackupAgentHelper {
-    static final String DEFAULT_PREFS_FILE = "com.menny.android.anysoftkeyboard_preferences";
+    static final String DEFAULT_PREFS_FILE = "com.android.marrowbone.anysoftboard_preferences";
     // A key to uniquely identify the set of backup data
     static final String PREFS_BACKUP_KEY = "prefs";
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.menny.android.anysoftkeyboard">
+    package="com.android.marrowbone.anysoftboard">
 
     <supports-screens
         android:anyDensity="true"
@@ -67,7 +67,7 @@
         <!-- this is ajust a proxy activit, it does nothing but direct to the actual setting ativity
         I use this, so I can 'disable' this activity at runtime, and so remove ASK from the launcher's icons -->
         <activity android:theme="@style/Theme.AskApp"
-            android:name="com.menny.android.anysoftkeyboard.LauncherSettingsActivity"
+            android:name=".LauncherSettingsActivity"
             android:icon="@drawable/ic_launcher_settings"
             android:launchMode="singleTop"
             android:label="@string/ime_name">

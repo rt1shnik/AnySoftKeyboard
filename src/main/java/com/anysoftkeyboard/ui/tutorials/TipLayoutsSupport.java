@@ -11,8 +11,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.util.List;
 

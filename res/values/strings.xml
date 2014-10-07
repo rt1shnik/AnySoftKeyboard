@@ -2,7 +2,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools"
            tools:ignore="MissingTranslation">
-    <string name="ime_name">AnySoftKeyboard</string>
+    <string name="ime_name">AnySoftKeyboard_v2</string>
     <string name="settings_app_name">AnySoftKeyboard Settings</string>
     <string name="spell_checker_service_name">AnySoftKeyboard Spell Checker</string>
     <string name="spell_checker_settings">AnySoftKeyboard Speller Settings</string>
@@ -702,7 +702,7 @@
 
     <string name="user_dict_backup_success_title">Backup done!</string>
     <string name="user_dict_backup_success_text">Successfully stored your words on device storage at
-        /Android/data/com.menny.android.anysoftkeyboard/files/
+        /Android/data/com.android.marrowbone.anysoftboard/files/
     </string>
     <string name="user_dict_backup_fail_title">Backup failed!</string>
     <string name="user_dict_backup_fail_text">Could not store your files! Is storage available?</string>

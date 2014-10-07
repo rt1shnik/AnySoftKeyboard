@@ -29,7 +29,7 @@ import android.view.animation.ScaleAnimation;
 
 import com.anysoftkeyboard.utils.Log;
 import com.anysoftkeyboard.utils.PointFCompat;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 public abstract class PassengerFragmentSupport {
 

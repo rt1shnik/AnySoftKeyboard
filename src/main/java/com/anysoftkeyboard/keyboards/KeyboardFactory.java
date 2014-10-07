@@ -23,9 +23,8 @@ import android.util.AttributeSet;
 import com.anysoftkeyboard.addons.AddOn;
 import com.anysoftkeyboard.addons.AddOnsFactory;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.util.ArrayList;
 
@@ -92,7 +91,7 @@ public class KeyboardFactory extends AddOnsFactory<KeyboardAddOnAndBuilder> {
     }
 
     private KeyboardFactory() {
-        super(TAG, "com.menny.android.anysoftkeyboard.KEYBOARD", "com.menny.android.anysoftkeyboard.keyboards",
+        super(TAG, "com.android.marrowbone.anysoftboard.KEYBOARD", "com.android.marrowbone.anysoftboard.keyboards",
                 "Keyboards", "Keyboard",
                 R.xml.keyboards, true);
     }

@@ -25,8 +25,8 @@ import android.os.Debug;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import com.anysoftkeyboard.utils.Workarounds;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.io.File;
 import java.io.IOException;

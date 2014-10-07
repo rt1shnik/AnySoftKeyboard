@@ -24,7 +24,7 @@ import com.anysoftkeyboard.ui.settings.setup.SetUpKeyboardWizardFragment;
 import com.anysoftkeyboard.ui.settings.setup.SetupSupport;
 import com.anysoftkeyboard.ui.tutorials.ChangeLogFragment;
 import com.anysoftkeyboard.ui.tutorials.TipsFragment;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
 import net.evendanan.pushingpixels.PassengerFragmentSupport;

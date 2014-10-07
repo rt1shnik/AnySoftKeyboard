@@ -24,8 +24,8 @@ import android.text.TextUtils;
 
 import com.anysoftkeyboard.WordComposer;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.AnyApplication;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.AnyApplication;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
 
 public abstract class BTreeDictionary extends EditableDictionary {
 

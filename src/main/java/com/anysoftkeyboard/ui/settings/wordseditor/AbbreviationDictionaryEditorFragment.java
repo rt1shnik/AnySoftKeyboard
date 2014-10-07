@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.anysoftkeyboard.dictionaries.EditableDictionary;
 import com.anysoftkeyboard.dictionaries.sqlite.AbbreviationsDictionary;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.R;
 
 import net.evendanan.pushingpixels.PassengerFragmentSupport;
 

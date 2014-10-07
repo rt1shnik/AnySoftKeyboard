@@ -30,9 +30,9 @@ import com.anysoftkeyboard.api.KeyCodes;
 import com.anysoftkeyboard.ui.tutorials.TutorialsProvider;
 import com.anysoftkeyboard.utils.Log;
 import com.anysoftkeyboard.utils.Workarounds;
-import com.menny.android.anysoftkeyboard.BuildConfig;
-import com.menny.android.anysoftkeyboard.FeaturesSet;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.FeaturesSet;
+import com.android.marrowbone.anysoftboard.R;
 
 import java.util.HashMap;
 import java.util.LinkedList;

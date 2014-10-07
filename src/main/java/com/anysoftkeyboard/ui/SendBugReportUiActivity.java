@@ -28,8 +28,8 @@ import android.widget.Toast;
 
 import com.anysoftkeyboard.ui.dev.LogCatViewFragment;
 import com.anysoftkeyboard.utils.Log;
-import com.menny.android.anysoftkeyboard.BuildConfig;
-import com.menny.android.anysoftkeyboard.R;
+import com.android.marrowbone.anysoftboard.BuildConfig;
+import com.android.marrowbone.anysoftboard.R;
 
 
 public class SendBugReportUiActivity extends FragmentActivity {
