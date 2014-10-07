@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /* 
 **
 ** Copyright 2008, The Android Open Source Project
@@ -62,7 +61,12 @@
     <color name="menu_background_disabled">#FFF</color>
     <color name="menu_background_pressed">#BBB</color>
 
+    <color name="for_old_background_1">#555368</color>
+    <color name="for_old_background_2">#323245</color>
+    <color name="transparent">#00000000</color>
+
     <color name="tutorial_background">#AA77DD</color>
+
 
     <color name="menu_divider">#663399</color>
     <color name="menu_item_divider">#77663399</color>

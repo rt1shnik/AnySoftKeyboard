@@ -29,6 +29,10 @@
     <dimen name="big_key_half_height">62dp</dimen>
     <dimen name="big_key_tall_height">90dp</dimen>
 
+    <dimen name="for_old_key_height">77dp</dimen>
+    <dimen name="for_old_key_half_height">62dp</dimen>
+    <dimen name="for_old_key_tall_height">90dp</dimen>
+
     <dimen name="default_key_vertical_gap">3dip</dimen>
     <dimen name="default_key_horizontal_gap">4dip</dimen>
     <dimen name="plain_theme_key_horizontal_gap">6dp</dimen>

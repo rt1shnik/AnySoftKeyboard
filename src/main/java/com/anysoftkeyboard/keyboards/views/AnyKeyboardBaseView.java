@@ -199,7 +199,7 @@ public class AnyKeyboardBaseView extends View implements
     int mSwipeVelocityThreshold;
     int mSwipeXDistanceThreshold;
     int mSwipeYDistanceThreshold;
-	int mSwipeSpaceXDistanceThreshold;
+    int mSwipeSpaceXDistanceThreshold;
     int mScrollXDistanceThreshold;
     int mScrollYDistanceThreshold;
 
@@ -230,7 +230,7 @@ public class AnyKeyboardBaseView extends View implements
     private final Rect mKeyBackgroundPadding;
     private final Rect mClipRegion = new Rect(0, 0, 0, 0);
     /*
-	 * NOTE: this field EXISTS ONLY AFTER THE CTOR IS FINISHED!
+     * NOTE: this field EXISTS ONLY AFTER THE CTOR IS FINISHED!
 	 */
 
     private final UIHandler mHandler = new UIHandler(this);
@@ -258,8 +258,8 @@ public class AnyKeyboardBaseView extends View implements
         mHandler.dismissPreview(0);
         dismissPopupKeyboard();
 
-        for(PointerTracker tracker : mPointerTrackers) {
-            Log.d(TAG, "Canceling tracker "+tracker.getKeyIndex());
+        for (PointerTracker tracker : mPointerTrackers) {
+            Log.d(TAG, "Canceling tracker " + tracker.getKeyIndex());
             sendOnXEvent(MotionEvent.ACTION_CANCEL, 0, 0, 0, tracker);
             tracker.setAlreadyProcessed();
         }
@@ -555,7 +555,7 @@ public class AnyKeyboardBaseView extends View implements
                         ACTION_KEY_TYPES.length + KEY_TYPES.length);
 
         final int[] remoteKeyboardThemeStyleable = KeyboardSupport.createBackwardCompatibleStyleable(
-                        R.styleable.AnyKeyboardViewTheme, context, theme.getPackageContext(), attributeIdMap);
+                R.styleable.AnyKeyboardViewTheme, context, theme.getPackageContext(), attributeIdMap);
         final int[] remoteKeyboardIconsThemeStyleable = KeyboardSupport.createBackwardCompatibleStyleable(
                 R.styleable.AnyKeyboardViewIconsTheme, context, theme.getPackageContext(), attributeIdMap);
 
@@ -719,7 +719,7 @@ public class AnyKeyboardBaseView extends View implements
         mGestureDetector.setIsLongpressEnabled(false);
 
         MultiTouchSupportLevel multiTouchSupportLevel =
-		        AnyApplication.getDeviceSpecific().getMultiTouchSupportLevel(getContext());
+                AnyApplication.getDeviceSpecific().getMultiTouchSupportLevel(getContext());
 
         mHasDistinctMultitouch = multiTouchSupportLevel == MultiTouchSupportLevel.Distinct;
 
@@ -1064,7 +1064,7 @@ public class AnyKeyboardBaseView extends View implements
             }
             if (keyCode == 0) {
                 if (BuildConfig.DEBUG)
-                    throw new IllegalArgumentException("No valid keycode for attr "+remoteTypeArray.getResourceId(remoteTypedArrayIndex, 0));
+                    throw new IllegalArgumentException("No valid keycode for attr " + remoteTypeArray.getResourceId(remoteTypedArrayIndex, 0));
                 Log.w(TAG, "No valid keycode for attr %d", remoteTypeArray.getResourceId(remoteTypedArrayIndex, 0));
                 return false;
             } else {
@@ -1096,7 +1096,7 @@ public class AnyKeyboardBaseView extends View implements
         Keyboard kbd = getKeyboard();
         if (kbd != null) {
             mSwipeYDistanceThreshold = (int) (mSwipeXDistanceThreshold *
-		            (((float) kbd.getHeight()) / ((float) getWidth())));
+                    (((float) kbd.getHeight()) / ((float) getWidth())));
         } else {
             mSwipeYDistanceThreshold = 0;
         }
@@ -1104,7 +1104,7 @@ public class AnyKeyboardBaseView extends View implements
             mSwipeYDistanceThreshold = mSwipeXDistanceThreshold;
 
         mSwipeSpaceXDistanceThreshold = mSwipeXDistanceThreshold / 2;
-	    mSwipeYDistanceThreshold = mSwipeYDistanceThreshold / 2;
+        mSwipeYDistanceThreshold = mSwipeYDistanceThreshold / 2;
 
         mScrollXDistanceThreshold = mSwipeXDistanceThreshold / 8;
         mScrollYDistanceThreshold = mSwipeYDistanceThreshold / 8;
@@ -1203,8 +1203,8 @@ public class AnyKeyboardBaseView extends View implements
      * Returns the state of the shift key of the keyboard, if any.
      *
      * @return true if the shift is in a pressed state, false otherwise. If
-     *         there is no shift key on the keyboard or there is no keyboard
-     *         attached, it returns false.
+     * there is no shift key on the keyboard or there is no keyboard
+     * attached, it returns false.
      */
     public boolean isShifted() {
         if (isPopupShowing())
@@ -1221,7 +1221,7 @@ public class AnyKeyboardBaseView extends View implements
      *
      * @param control whether or not to enable the state of the control key
      * @return true if the control key state changed, false if there was no
-     *         change
+     * change
      */
     public boolean setControl(boolean control) {
         if (mKeyboard != null) {
@@ -1238,8 +1238,8 @@ public class AnyKeyboardBaseView extends View implements
      * Returns the state of the control key of the keyboard, if any.
      *
      * @return true if the control is in a pressed state, false otherwise. If
-     *         there is no control key on the keyboard or there is no keyboard
-     *         attached, it returns false.
+     * there is no control key on the keyboard or there is no keyboard
+     * attached, it returns false.
      */
     public boolean isControl() {
         if (mKeyboard != null) {
@@ -1311,7 +1311,13 @@ public class AnyKeyboardBaseView extends View implements
         // Character.isLowerCase(label.charAt(0))) {
         // label = label.toString().toUpperCase();
         // }
-        if (mKeyboard.isShifted()) {
+
+        ////////////////// -!!!!!!!!!!!!!!!! Important Place !!!!!!!!!!!!!!!!!!!!!!- ///////////////////
+        final KeyboardTheme theme = KeyboardThemeFactory
+                .getCurrentKeyboardTheme(getContext().getApplicationContext());
+        int themeResId = theme.getThemeResId();
+        if (mKeyboard.isShifted() || themeResId == R.style.ForOldMan) {
+
             if (!TextUtils.isEmpty(key.shiftedKeyLabel))
                 label = key.shiftedKeyLabel;
             else if (!TextUtils.isEmpty(label)
@@ -1509,8 +1515,9 @@ public class AnyKeyboardBaseView extends View implements
             keyBackground.setState(drawableState);
 
             // Switch the character to uppercase if shift is pressed
+            // Important Place!!!!!
             CharSequence label = key.label == null ? null : adjustCase(key).toString();
-
+//            CharSequence label = adjustCase(key).toString();
             final Rect bounds = keyBackground.getBounds();
             if ((key.width != bounds.right) || (key.height != bounds.bottom)) {
                 keyBackground.setBounds(0, 0, key.width, key.height);
@@ -1531,8 +1538,8 @@ public class AnyKeyboardBaseView extends View implements
                     final int drawableX;
                     final int drawableY;
 
-                    drawableWidth = is9Patch? key.width : iconToDraw.getIntrinsicWidth();
-                    drawableHeight = is9Patch? key.height : iconToDraw.getIntrinsicHeight();
+                    drawableWidth = is9Patch ? key.width : iconToDraw.getIntrinsicWidth();
+                    drawableHeight = is9Patch ? key.height : iconToDraw.getIntrinsicHeight();
                     drawableX = (key.width + mKeyBackgroundPadding.left
                             - mKeyBackgroundPadding.right - drawableWidth) / 2;
                     drawableY = (key.height + mKeyBackgroundPadding.top
@@ -1944,7 +1951,7 @@ public class AnyKeyboardBaseView extends View implements
     private Drawable getIconToDrawForKey(Key key, boolean feedback) {
         if (key.dynamicEmblem == Keyboard.KEY_EMBLEM_TEXT)
             return null;
-        
+
         if (feedback && key.iconPreview != null)
             return key.iconPreview;
         if (key.icon != null)
@@ -2026,7 +2033,7 @@ public class AnyKeyboardBaseView extends View implements
         // is enabled)
         if (oldKeyIndex != keyIndex
                 && (mShowPreview || (hidePreviewOrShowSpaceKeyPreview && isLanguageSwitchEnabled))) {
-            final Key key = hidePreviewOrShowSpaceKeyPreview? null : tracker.getKey(keyIndex);
+            final Key key = hidePreviewOrShowSpaceKeyPreview ? null : tracker.getKey(keyIndex);
             //this will ensure that in case the key is marked as NO preview, we will just dismiss the previous popup.
             if (keyIndex == NOT_A_KEY || key == null || !key.showPreview) {
                 mHandler.cancelPopupPreview();
@@ -2218,7 +2225,7 @@ public class AnyKeyboardBaseView extends View implements
         // onBufferDraw.
         mDirtyRect.union(key.x + getPaddingLeft(), key.y + getPaddingTop(),
                 key.x + key.width + getPaddingLeft(), key.y + key.height
-                + getPaddingTop());
+                        + getPaddingTop());
         // doOnBufferDrawWithMemProtection(mCanvas);
         invalidate(key.x + getPaddingLeft(), key.y + getPaddingTop(), key.x
                 + key.width + getPaddingLeft(), key.y + key.height
@@ -2282,8 +2289,8 @@ public class AnyKeyboardBaseView extends View implements
      *
      * @param popupKey the key that was long pressed
      * @return true if the long press is handled, false otherwise. Subclasses
-     *         should call the method on the base class if the subclass doesn't
-     *         wish to handle the call.
+     * should call the method on the base class if the subclass doesn't
+     * wish to handle the call.
      */
     protected boolean onLongPress(Context packageContext, Key popupKey,
                                   boolean isSticky, boolean requireSlideInto) {
@@ -2451,8 +2458,8 @@ public class AnyKeyboardBaseView extends View implements
             mLastTimeHadTwoFingers = SystemClock.elapsedRealtime();//marking the time. Read isAtTwoFingersState()
 
         if (mTouchesAreDisabledTillLastFingerIsUp) {
-            if ( mOldPointerCount == 1 &&
-                (action == MotionEvent.ACTION_CANCEL || action == MotionEvent.ACTION_UP)) {
+            if (mOldPointerCount == 1 &&
+                    (action == MotionEvent.ACTION_CANCEL || action == MotionEvent.ACTION_UP)) {
                 mTouchesAreDisabledTillLastFingerIsUp = false;
             }
 

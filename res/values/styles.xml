@@ -173,7 +173,31 @@
         <item name="keyTextSize">@dimen/lean_big_key_text_size</item>
     </style>
 
+    <style name="ForOldMan" parent="@style/LeanDark2">
+        <item name="keyNormalHeight">@dimen/big_key_height</item>
+        <item name="keySmallHeight">@dimen/big_key_half_height</item>
+        <item name="keyLargeHeight">@dimen/big_key_tall_height</item>
+        <item name="keyTextSize">@dimen/key_text_size_for_old_man</item>
+        <item name="keyBackground">@color/transparent</item>
+        <item name="android:background">@drawable/for_old_man_background</item>
+        <item name="android:textAllCaps" tools:ignore="NewApi">true</item>
+
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+
+        <item name="hintTextSize">0dip</item>
+    </style>
+
     <style name="LeanDarkPopupBig" parent="@style/LeanDarkPopup2">
+        <item name="keyNormalHeight">@dimen/big_key_height</item>
+        <item name="keySmallHeight">@dimen/big_key_half_height</item>
+        <item name="keyLargeHeight">@dimen/big_key_tall_height</item>
+        <item name="keyTextSize">@dimen/lean_big_key_text_size</item>
+    </style>
+
+    <style name="ForOldManPopupBig" parent="@style/LeanDarkPopup2">
         <item name="keyNormalHeight">@dimen/big_key_height</item>
         <item name="keySmallHeight">@dimen/big_key_half_height</item>
         <item name="keyLargeHeight">@dimen/big_key_tall_height</item>

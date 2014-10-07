@@ -586,6 +586,8 @@
     <string name="blacktheme_keyboard_theme_description">Simple black theme with color highlights</string>
     <string name="lean_dark_keyboard_theme_name">Lean Dark</string>
     <string name="lean_dark_keyboard_theme_description">Dark theme, with minimal UI elements</string>
+    <string name="for_old_man_keyboard_theme_name">For old man</string>
+    <string name="for_old_man_keyboard_theme_description">Theme, with big UI elements</string>
     <string name="lean_dark_2_keyboard_theme_name">Lean Dark - Option 2</string>
     <string name="lean_dark_big_keyboard_theme_name">Lean Dark - Large Keys</string>
     <string name="lean_dark_big_keyboard_theme_description">Same Dark theme, but with larger keys.</string>
