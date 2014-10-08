@@ -2,7 +2,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools"
            tools:ignore="MissingTranslation">
-    <string name="ime_name">AnySoftKeyboard_v2</string>
+    <string name="app_name" translatable="false">LoukaKeyboard</string>
+    <string name="ime_name" translatable="false">LoukaKeyboard</string>
     <string name="settings_app_name">AnySoftKeyboard Settings</string>
     <string name="spell_checker_service_name">AnySoftKeyboard Spell Checker</string>
     <string name="spell_checker_settings">AnySoftKeyboard Speller Settings</string>
@@ -764,19 +765,29 @@
     <string name="wizard_step_this_step_complete_title">Step done!</string>
     <string name="wizard_step_this_step_complete_text_enabled"><i>AnySoftKeyboard</i> is enabled. You are only one step away from using <i>AnySoftKeyboard</i> on your awesome device!</string>
     <string name="wizard_step_this_step_complete_text_switched"><i>AnySoftKeyboard</i> is your default keyboard. But, you\'ll probably want to set-up additional things, like themes or languages?</string>
+    <string name="wizard_step_this_step_complete_text_enabled_louka" translatable="false"><i>LoukaKeyboard</i> is enabled. You are only one step away from using <i>LoukaKeyboard</i> on your awesome device!</string>
+    <string name="wizard_step_this_step_complete_text_switched_louka" translatable="false"><i>LoukaKeyboard</i> is your default keyboard. But, you\'ll probably want to set-up additional things, like themes or languages?</string>
     <string name="wizard_step_swipe_to_next">Swipe to the next page.</string>
     <string name="setup_wizard_step_one_title">Enable AnySoftKeyboard</string>
+    <string name="setup_wizard_step_one_title_louka" translatable="false">Enable LoukaKeyboard</string>
     <string name="setup_wizard_step_small_sub_title">This is the first step, but don\'t worry, there are only three, very simple steps.</string>
     <string name="setup_wizard_step_one_details">In this step, you\'ll need to enable <i>AnySoftKeyboard</i>. Please check <i>\'AnySoftKeyboard\'</i> in your <i>Language&amp;Input settings</i>. This will allow us to run on your device.</string>
     <string name="setup_wizard_step_one_action">Go to your <i>Language&amp;Input settings</i>…</string>
     <string name="setup_wizard_step_one_action_error_no_settings_activity">Error: Your device does not support 3rd-party keyboards. AnySoftKeyboard can not be activated!</string>
+    <string name="setup_wizard_step_one_details_louka" translatable="false">In this step, you\'ll need to enable <i>LoukaKeyboard</i>. Please check <i>\'LoukaKeyboard\'</i> in your <i>Language&amp;Input settings</i>. This will allow us to run on your device.</string>
+    <string name="setup_wizard_step_one_action_error_no_settings_activity_louka" translatable="false">Error: Your device does not support 3rd-party keyboards. LoukaKeyboard can not be activated!</string>
     <string name="setup_wizard_top_title">Setup\nAnySoftKeyboard\nfor use</string>
     <string name="setup_wizard_top_title_tablet">Setup AnySoftKeyboard for use</string>
+    <string name="setup_wizard_top_title_louka" translatable="false">Setup\LoukaKeyboard\nfor use</string>
+    <string name="setup_wizard_top_title_tablet_luoka" translatable="false">Setup LoukaKeyboard for use</string>
     <string name="setup_wizard_step_two_title">Switch to AnySoftKeyboard</string>
+    <string name="setup_wizard_step_two_title_louka" translatable="false">Switch to LoukaKeyboard</string>
     <string name="setup_wizard_step_two_small_sub_title">Step two of three</string>
     <string name="setup_wizard_step_two_details">Your system can use <i>AnySoftKeyboard</i> now, but it is not set as the active keyboard.\nBy switching, <i>AnySoftKeyboard</i> will be your new on-screen keyboard, along with all its features!</string>
+    <string name="setup_wizard_step_two_details_louka" translatable="false">Your system can use <i>LoukaKeyboard</i> now, but it is not set as the active keyboard.\nBy switching, <i>LoukaKeyboard</i> will be your new on-screen keyboard, along with all its features!</string>
     <string name="setup_wizard_step_two_action">Switch active keyboards</string>
     <string name="setup_wizard_step_three_title">AnySoftKeyboard is ready!</string>
+    <string name="setup_wizard_step_three_title_louka" translatable="false">LoukaKeyboard is ready!</string>
     <string name="setup_wizard_step_three_details">Thank you for choosing <i>AnySoftKeyboard</i>.\nThis keyboard excel in its customization level. Go ahead and personalize:</string>
     <string name="setup_wizard_step_three_action_languages">Setup languages…</string>
     <string name="setup_wizard_step_three_action_themes">Select theme…</string>

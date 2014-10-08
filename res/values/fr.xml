@@ -2,17 +2,19 @@
 <resources>
     <!--<string name="azerty_keyboard">AZERTY</string>-->
 
-    <string name="fr_ca_keyboard">French Canadian</string>
+    <!--<string name="fr_ca_keyboard" translatable="false">French Canadian</string>-->
 
-    <!--<string name="bepo_keyboard">French Bépo</string>-->
-
-    <!-- BEPO -->
-
-
-    <string name="bepo_keyboard_description">www.bepo.fr - dvorak like</string>
+    <string name="bepo_keyboard" translatable="false">French</string>
 
     <!-- BEPO -->
 
 
-    <string name="french_dictionary">French</string>
+    <string name="bepo_keyboard_description" translatable="false">www.bepo.fr - dvorak like</string>
+
+    <!-- BEPO -->
+
+
+    <string name="french_dictionary" translatable="false">French</string>
+
+    <string name="setup_wizard_done" translatable="false">Thank you for choosing <i>LoukaKeyboard</i>.</string>
 </resources>
