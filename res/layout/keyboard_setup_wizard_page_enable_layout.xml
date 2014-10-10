@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/setup_wizard_step_one_title"/>
+        android:text="@string/setup_wizard_step_one_title_louka"/>
 
     <include android:id="@id/previous_step_not_complete"
         layout="@layout/keyboard_setup_wizard_previous_step_not_complete_layout"
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/wizard_step_this_step_complete_text_enabled" />
+            android:text="@string/wizard_step_this_step_complete_text_enabled_louka" />
 
         <TextView
             style="@style/Ask.Text.Normal"
@@ -77,7 +77,7 @@
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/setup_wizard_step_one_details" />
+            android:text="@string/setup_wizard_step_one_details_louka" />
 
         <View
             style="@style/Ask.Menu.Divider" />

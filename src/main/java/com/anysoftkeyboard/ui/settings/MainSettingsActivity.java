@@ -33,6 +33,7 @@ import com.anysoftkeyboard.theme.KeyboardTheme;
 import com.anysoftkeyboard.theme.KeyboardThemeFactory;
 import com.android.marrowbone.anysoftboard.AnyApplication;
 import com.android.marrowbone.anysoftboard.R;
+import com.anysoftkeyboard.ui.settings.setup.SetUpKeyboardWizardFragment;
 
 import net.evendanan.pushingpixels.EdgeEffectHacker;
 import net.evendanan.pushingpixels.FragmentChauffeurActivity;
@@ -89,6 +90,8 @@ public class MainSettingsActivity extends FragmentChauffeurActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
 
         AnyApplication.getConfig().addChangedListener(menuExtraUpdaterOnConfigChange);
+
+        setFullScreen(true);
     }
 
     @Override
@@ -102,7 +105,7 @@ public class MainSettingsActivity extends FragmentChauffeurActivity {
 
     @Override
     protected Fragment createRootFragmentInstance() {
-        return new MainFragment();
+        return new SetUpKeyboardWizardFragment();
     }
 
     @Override

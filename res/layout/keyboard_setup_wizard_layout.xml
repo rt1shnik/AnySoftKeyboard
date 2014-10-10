@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/setup_wizard_top_title"
+        android:text="@string/setup_wizard_top_title_louka"
         android:layout_marginBottom="16dp"/>
 
     <FrameLayout

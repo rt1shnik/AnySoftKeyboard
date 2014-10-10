@@ -23,9 +23,9 @@
     <dimen name="default_key_half_height">27dip</dimen>
     <dimen name="default_key_tall_height">44dip</dimen>
 
-    <dimen name="big_key_height">45dp</dimen>
-    <dimen name="big_key_half_height">37dp</dimen>
-    <dimen name="big_key_tall_height">54dp</dimen>
+    <dimen name="big_key_height">42dp</dimen>
+    <dimen name="big_key_half_height">36dp</dimen>
+    <dimen name="big_key_tall_height">56dp</dimen>
 
     <dimen name="for_old_key_height">45dp</dimen>
     <dimen name="for_old_key_half_height">37dp</dimen>

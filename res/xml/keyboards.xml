@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboards>
     <Keyboard
+        nameResId="@string/azerty_keyboard"
+        iconResId="@drawable/flag"
+        layoutResId="@xml/azerty"
+        id="362b0871-f09a-411b-9a2a-3eb6034a18ea"
+        index="11"
+        defaultEnabled="true"
+        defaultDictionaryLocale="fr"
+        description="Created with norman.obry"
+        sentenceSeparators=".,)" />
+    <Keyboard
         nameResId="@string/eng_keyboard"
         iconResId="@drawable/ic_stat_en"
         layoutResId="@xml/qwerty"
@@ -8,7 +18,7 @@
         defaultDictionaryLocale="en"
         description="QWERTY Latin keyboard"
         index="1"
-        defaultEnabled="false"
+        defaultEnabled="true"
         physicalKeyboardMappingResId="@xml/physical"
         screenshotResId="@drawable/english_qwerty_screenshot" />
     <Keyboard
@@ -37,33 +47,24 @@
         screenshotResId="@drawable/english_qwerty_with_symbols_screenshot" />
 
     <!--<Keyboard-->
-        <!--nameResId="@string/azerty_keyboard"-->
-        <!--iconResId="@drawable/flag"-->
-        <!--layoutResId="@xml/azerty"-->
-        <!--id="362b0871-f09a-411b-9a2a-3eb6034a18ea"-->
-        <!--index="11"-->
-        <!--defaultDictionaryLocale="fr"-->
-        <!--description="Created with norman.obry"-->
-        <!--sentenceSeparators=".,)" />-->
+    <!--nameResId="@string/fr_ca_keyboard"-->
+    <!--iconResId="@drawable/flag"-->
+    <!--layoutResId="@xml/ca_fr_qwerty"-->
+    <!--id="ef16b5bc-a376-434c-ba18-878751b26fd5"-->
+    <!--index="151"-->
+    <!--defaultEnabled="true"-->
+    <!--defaultDictionaryLocale="fr"-->
+    <!--description="Created with d.nahmiasleonard"-->
+    <!--sentenceSeparators=".,)" />-->
     <!--<Keyboard-->
-        <!--nameResId="@string/fr_ca_keyboard"-->
-        <!--iconResId="@drawable/flag"-->
-        <!--layoutResId="@xml/ca_fr_qwerty"-->
-        <!--id="ef16b5bc-a376-434c-ba18-878751b26fd5"-->
-        <!--index="151"-->
-        <!--defaultEnabled="true"-->
-        <!--defaultDictionaryLocale="fr"-->
-        <!--description="Created with d.nahmiasleonard"-->
-        <!--sentenceSeparators=".,)" />-->
-    <Keyboard
-        nameResId="@string/bepo_keyboard"
-        iconResId="@drawable/flag"
-        layoutResId="@xml/bepo"
-        id="f6599b5b-df00-4ea8-a958-61b0217ef917"
-        index="12"
-        defaultEnabled="true"
-        defaultDictionaryLocale="fr"
-        description="@string/bepo_keyboard_description"
-        sentenceSeparators=".,)" />
+    <!--nameResId="@string/bepo_keyboard"-->
+    <!--iconResId="@drawable/flag"-->
+    <!--layoutResId="@xml/bepo"-->
+    <!--id="f6599b5b-df00-4ea8-a958-61b0217ef917"-->
+    <!--index="12"-->
+    <!--defaultEnabled="true"-->
+    <!--defaultDictionaryLocale="fr"-->
+    <!--description="@string/bepo_keyboard_description"-->
+    <!--sentenceSeparators=".,)" />-->
 
 </Keyboards>

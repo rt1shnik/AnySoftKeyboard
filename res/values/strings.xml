@@ -3,7 +3,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools"
            tools:ignore="MissingTranslation">
     <string name="app_name" translatable="false">LoukaKeyboard</string>
-    <string name="ime_name" translatable="false">LoukaKeyboard</string>
+    <string name="ime_name">LoukaKeyboard</string>
     <string name="settings_app_name">AnySoftKeyboard Settings</string>
     <string name="spell_checker_service_name">AnySoftKeyboard Spell Checker</string>
     <string name="spell_checker_settings">AnySoftKeyboard Speller Settings</string>
