@@ -55,17 +55,17 @@ public class KeyboardSwitcher {
     AnySoftKeyboard mIME;
     private final Context mContext;
 
-    private static final int SYMBOLS_KEYBOARD_REGULAR_INDEX = 0;
-    private static final int SYMBOLS_KEYBOARD_ALT_INDEX = 1;
-    private static final int SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX = 2;
-    private static final int SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
+    private static final int SYMBOLS_KEYBOARD_REGULAR_INDEX = 1;
+    private static final int SYMBOLS_KEYBOARD_ALT_INDEX = 2;
+    private static final int SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX = 0;
+    private static final int SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX = SYMBOLS_KEYBOARD_ALT_INDEX;
     private static final int SYMBOLS_KEYBOARD_NUMBERS_INDEX = 3;
     private static final int SYMBOLS_KEYBOARD_PHONE_INDEX = 4;
     private static final int SYMBOLS_KEYBOARD_DATETIME_INDEX = 5;
     private static final int SYMBOLS_KEYBOARDS_COUNT = 6;
 
     private int mMode;
-    private int mLastSelectedSymbolsKeyboard = SYMBOLS_KEYBOARD_REGULAR_INDEX;
+    private int mLastSelectedSymbolsKeyboard = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
 
     private AnyKeyboard[] mSymbolsKeyboardsArray = EMPTY_AnyKeyboards;
     // my working keyboards
@@ -152,22 +152,22 @@ public class KeyboardSwitcher {
                     if (AnyApplication.getConfig().use16KeysSymbolsKeyboards())
                         keyboard = new GenericKeyboard(mContext,
                                 R.xml.symbols_16keys, R.xml.symbols,
-                                mContext.getString(R.string.symbols_keyboard),
+                                mContext.getString(R.string.symbols_keyboard_1),
                                 "symbols_keyboard", mode);
                     else
                         keyboard = new GenericKeyboard(mContext, R.xml.symbols,
-                                mContext.getString(R.string.symbols_keyboard),
+                                mContext.getString(R.string.symbols_keyboard_1),
                                 "symbols_keyboard", mode, false);
                     break;
                 case SYMBOLS_KEYBOARD_ALT_INDEX:
                     if (AnyApplication.getConfig().use16KeysSymbolsKeyboards())
                         keyboard = new GenericKeyboard(mContext,
                                 R.xml.symbols_alt_16keys, R.xml.symbols_alt,
-                                mContext.getString(R.string.symbols_alt_keyboard),
+                                mContext.getString(R.string.symbols_keyboard_2),
                                 "symbols_keyboard", mode);
                     else
                         keyboard = new GenericKeyboard(mContext, R.xml.symbols_alt,
-                                mContext.getString(R.string.symbols_alt_keyboard),
+                                mContext.getString(R.string.symbols_keyboard_2),
                                 "alt_symbols_keyboard", mode, false);
                     break;
                 case SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX:
@@ -434,7 +434,7 @@ public class KeyboardSwitcher {
             int tooltipResId;
             switch (nextKeyboardIndex) {
                 case SYMBOLS_KEYBOARD_ALT_INDEX:
-                    tooltipResId = R.string.symbols_alt_keyboard;
+                    tooltipResId = R.string.symbols_keyboard_2;
                     break;
                 case SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX:
                     tooltipResId = R.string.symbols_alt_num_keyboard;
@@ -448,9 +448,11 @@ public class KeyboardSwitcher {
                 case SYMBOLS_KEYBOARD_DATETIME_INDEX:
                     tooltipResId = R.string.symbols_time_keyboard;
                     break;
+                case SYMBOLS_KEYBOARD_REGULAR_INDEX:
+                    tooltipResId = R.string.symbols_keyboard_1;
+                    break;
                 default:
-                    // case SYMBOLS_KEYBOARD_REGULAR_INDEX:
-                    tooltipResId = R.string.symbols_keyboard;
+                    tooltipResId = R.string.symbols_alt_num_keyboard;
                     break;
             }
             return mContext.getString(tooltipResId);
@@ -536,13 +538,13 @@ public class KeyboardSwitcher {
         if (AnyApplication.getConfig().getCycleOverAllSymbols()) {
             if (!isAlphabetMode()) {
                 if (nextKeyboardIndex >= SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX)
-                    nextKeyboardIndex = SYMBOLS_KEYBOARD_REGULAR_INDEX;
+                    nextKeyboardIndex = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
                 else
                     nextKeyboardIndex++;
             } else
-                nextKeyboardIndex = SYMBOLS_KEYBOARD_REGULAR_INDEX;
+                nextKeyboardIndex = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
         } else {
-            nextKeyboardIndex = SYMBOLS_KEYBOARD_REGULAR_INDEX;
+            nextKeyboardIndex = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
         }
         return nextKeyboardIndex;
     }

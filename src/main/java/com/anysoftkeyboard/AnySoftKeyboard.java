@@ -465,19 +465,20 @@ public class AnySoftKeyboard extends InputMethodService implements
 
         final TextView tipsNotification = (TextView) candidateViewContainer
                 .findViewById(R.id.tips_notification_on_candidates);
-        if (tipsNotification != null) {// why? in API 3 it is not supported
-            if (mConfig.getShowTipsNotification()
-                    && TutorialsProvider.shouldShowTips(getApplicationContext())) {
-
-                final String TIPS_NOTIFICATION_KEY = "TIPS_NOTIFICATION_KEY";
-                TipLayoutsSupport.addTipToCandidate(getApplicationContext(), tipsNotification, TIPS_NOTIFICATION_KEY, new OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        TutorialsProvider.showTips(getApplicationContext());
-                    }
-                });
-            }
-        }
+        tipsNotification.setVisibility(View.GONE);
+//        if (tipsNotification != null) {// why? in API 3 it is not supported
+//            if (mConfig.getShowTipsNotification()
+//                    && TutorialsProvider.shouldShowTips(getApplicationContext())) {
+//
+//                final String TIPS_NOTIFICATION_KEY = "TIPS_NOTIFICATION_KEY";
+//                TipLayoutsSupport.addTipToCandidate(getApplicationContext(), tipsNotification, TIPS_NOTIFICATION_KEY, new OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        TutorialsProvider.showTips(getApplicationContext());
+//                    }
+//                });
+//            }
+//        }
 		/*
 		 * At some point I wanted the user to click a View to restart the
 		 * suggestions. I don't any more. mRestartSuggestionsView =
@@ -988,6 +989,7 @@ public class AnySoftKeyboard extends InputMethodService implements
         // or if the physical keyboard supports candidates
         // (mPredictionLandscape)
         final boolean shouldShow = shouldCandidatesStripBeShown() && shown;
+//        final boolean shouldShow = false;
         final boolean currentlyShown = mCandidatesParent != null
                 && mCandidatesParent.getVisibility() == View.VISIBLE;
         super.setCandidatesViewShown(shouldShow);

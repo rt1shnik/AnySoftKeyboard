@@ -46,7 +46,7 @@
 
     <dimen name="key_text_size">21sp</dimen>
     <dimen name="lean_key_text_size">18sp</dimen>
-    <dimen name="key_text_size_for_old_man">32sp</dimen>
+    <dimen name="key_text_size_for_old_man">34sp</dimen>
     <dimen name="lean_big_key_text_size">26sp</dimen>
     <dimen name="key_label_text_size">14sp</dimen>
     <dimen name="key_hint_text_size">7sp</dimen>
