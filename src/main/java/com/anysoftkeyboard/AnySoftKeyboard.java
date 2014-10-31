@@ -523,7 +523,9 @@ public class AnySoftKeyboard extends InputMethodService implements
         Log.d(TAG, "onStartInputView(EditorInfo:" + attribute.imeOptions
                     + "," + attribute.inputType + ", restarting:" + restarting
                     + ")");
-
+        Intent intent = new Intent();
+        intent.setAction("com.louka.launcher.sosbutton.hide");
+        sendBroadcast(intent);
         super.onStartInputView(attribute, restarting);
         if (mVoiceRecognitionTrigger != null) {
             mVoiceRecognitionTrigger.onStartInputView();
@@ -687,6 +689,17 @@ public class AnySoftKeyboard extends InputMethodService implements
         super.hideWindow();
 
         TextEntryState.endSession();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent();
+                intent.setAction("com.louka.launcher.sosbutton.show");
+                sendBroadcast(intent);
+            }
+        };
+        Handler handler = new Handler();
+        handler.postDelayed(runnable, 300);
+
     }
 
     @Override
