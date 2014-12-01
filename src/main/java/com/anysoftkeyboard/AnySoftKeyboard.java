@@ -698,7 +698,7 @@ public class AnySoftKeyboard extends InputMethodService implements
             }
         };
         Handler handler = new Handler();
-        handler.postDelayed(runnable, 300);
+        handler.postDelayed(runnable, 0);
 
     }
 
