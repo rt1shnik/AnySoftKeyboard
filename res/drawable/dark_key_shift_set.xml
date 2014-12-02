@@ -20,14 +20,14 @@
 
     <!-- checked -->
     <item android:state_checked="true" ask:key_type_feedback="true"
-          android:drawable="@drawable/sym_keyboard_shift_locked"/>
-    <item android:state_checked="true" android:drawable="@drawable/sym_keyboard_shift_locked"/>
+          android:drawable="@drawable/sym_keyboard_shift_locked_black"/>
+    <item android:state_checked="true" android:drawable="@drawable/sym_keyboard_shift_locked_black"/>
 
     <!-- pressed -->
-    <item android:state_pressed="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_shift_on"/>
-    <item android:state_pressed="true" android:drawable="@drawable/sym_keyboard_shift_on"/>
+    <item android:state_pressed="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_shift_on_black"/>
+    <item android:state_pressed="true" android:drawable="@drawable/sym_keyboard_shift_on_black"/>
 
     <!-- Normal keys -->
-    <item ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_shift"/>
-    <item android:drawable="@drawable/sym_keyboard_shift"/>
+    <item ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_shift_black"/>
+    <item android:drawable="@drawable/sym_keyboard_shift_black"/>
 </selector>

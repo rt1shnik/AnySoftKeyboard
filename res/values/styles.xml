@@ -190,6 +190,8 @@
         <item name="android:paddingBottom">0dp</item>
 
         <item name="hintTextSize">0dip</item>
+
+        <item name="keyTextColor">#000000</item>
     </style>
 
     <style name="LeanDarkPopupBig" parent="@style/LeanDarkPopup2">

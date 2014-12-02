@@ -19,14 +19,14 @@
           xmlns:ask="http://schemas.android.com/apk/res/com.android.marrowbone.anysoftboard">
 
     <!-- Search keys -->
-    <item ask:action_search="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_search"/>
-    <item ask:action_search="true" android:drawable="@drawable/sym_keyboard_search"/>
+    <item ask:action_search="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_search_black"/>
+    <item ask:action_search="true" android:drawable="@drawable/sym_keyboard_search_black"/>
 
     <!-- Done keys -->
-    <item ask:action_done="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_done"/>
-    <item ask:action_done="true" android:drawable="@drawable/sym_keyboard_done"/>
+    <item ask:action_done="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_done_black"/>
+    <item ask:action_done="true" android:drawable="@drawable/sym_keyboard_done_black"/>
 
     <!-- ENTER keys -->
-    <item ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_return"/>
-    <item android:drawable="@drawable/sym_keyboard_return"/>
+    <item ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_return_black"/>
+    <item android:drawable="@drawable/sym_keyboard_return_black"/>
 </selector>
