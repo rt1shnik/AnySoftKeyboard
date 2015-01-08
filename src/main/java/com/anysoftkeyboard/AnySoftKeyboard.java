@@ -223,6 +223,7 @@ public class AnySoftKeyboard extends InputMethodService implements
     private final boolean mConnectbotTabHack = true;
 
     private VoiceInput mVoiceRecognitionTrigger;
+    private boolean isVisible;
 
     public AnySoftKeyboard() {
         mConfig = AnyApplication.getConfig();
@@ -517,15 +518,33 @@ public class AnySoftKeyboard extends InputMethodService implements
         }
     }
 
+    private void sendBroadCastToHideHideSosButton(){
+
+        Intent intent = new Intent();
+        intent.setAction("com.louka.launcher.sosbutton.hide");
+        sendBroadcast(intent);
+    }
+
     @Override
     public void onStartInputView(final EditorInfo attribute,
                                  final boolean restarting) {
         Log.d(TAG, "onStartInputView(EditorInfo:" + attribute.imeOptions
                     + "," + attribute.inputType + ", restarting:" + restarting
                     + ")");
-        Intent intent = new Intent();
-        intent.setAction("com.louka.launcher.sosbutton.hide");
-        sendBroadcast(intent);
+
+        isVisible = true;
+        sendBroadCastToHideHideSosButton();
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(isVisible) {
+                    sendBroadCastToHideHideSosButton();
+                }
+            }
+        }, 1000);
+
         super.onStartInputView(attribute, restarting);
         if (mVoiceRecognitionTrigger != null) {
             mVoiceRecognitionTrigger.onStartInputView();
@@ -688,6 +707,7 @@ public class AnySoftKeyboard extends InputMethodService implements
 
         super.hideWindow();
 
+        isVisible = false;
         TextEntryState.endSession();
         Runnable runnable = new Runnable() {
             @Override
