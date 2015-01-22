@@ -359,7 +359,7 @@ public class ExternalAnyKeyboard extends AnyKeyboard implements
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
 				case 'i':
-					aKey.popupCharacters = "\u00ec\u00ed\u00ee\u00ef\u0142\u012B";// "ìíîïł";
+					aKey.popupCharacters = "\u00ec\u00ed\u00ee\u00ef\u012B";// "ìíîïł";
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
 				case 'j':
