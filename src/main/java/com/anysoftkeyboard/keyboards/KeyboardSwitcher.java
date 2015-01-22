@@ -273,6 +273,12 @@ public class KeyboardSwitcher {
         boolean resubmitToView = true;
         AnyKeyboard keyboard = null;
 
+        if(mode == MODE_NUMBERS){
+            mInputView.setBackgroundResource(R.drawable.for_old_man_background_num);
+        }else{
+            mInputView.setBackgroundResource(R.drawable.for_old_man_background_cr);
+        }
+
         switch (mode) {
             case MODE_DATETIME:
                 mAlphabetMode = false;
@@ -285,6 +291,7 @@ public class KeyboardSwitcher {
                 mKeyboardLocked = true;
                 keyboard = getSymbolsKeyboard(SYMBOLS_KEYBOARD_NUMBERS_INDEX,
                         getKeyboardMode(attr));
+
                 break;
             case MODE_SYMBOLS:
                 mAlphabetMode = false;
