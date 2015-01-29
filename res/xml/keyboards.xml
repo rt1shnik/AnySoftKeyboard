@@ -11,6 +11,16 @@
         description="Created with norman.obry"
         sentenceSeparators=".,)" />
     <Keyboard
+        nameResId="@string/abcd_keyboard"
+        iconResId="@drawable/flag"
+        layoutResId="@xml/abcd"
+        id="362b0871-f09a-411b-9a2a-3eb6034a18eb"
+        index="12"
+        defaultEnabled="true"
+        defaultDictionaryLocale="fr"
+        description="Created with norman.obry"
+        sentenceSeparators=".,)" />
+    <Keyboard
         nameResId="@string/eng"
         iconResId="@drawable/ic_stat_en"
         layoutResId="@xml/qwerty"

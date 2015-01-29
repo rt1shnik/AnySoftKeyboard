@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="azerty_keyboard" translatable="false">Clavier FR</string>
+    <string name="abcd_keyboard" translatable="false">Alphabet</string>
     <string name="eng" translatable="false">Clavier EN</string>
     <string name="fr_ca_keyboard" translatable="false">French Canadian</string>
 
