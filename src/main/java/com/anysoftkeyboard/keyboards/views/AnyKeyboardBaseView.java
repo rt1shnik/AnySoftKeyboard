@@ -1596,35 +1596,6 @@ public class AnyKeyboardBaseView extends View implements
                 // no matter what: StaticLayout
                 // this should be in the top left corner of the key
                 float textWidth = paint.measureText(label, 0, label.length());
-                // I'm going to try something if the key is too small for the
-                // text:
-                // 1) divide the text size by 1.5
-                // 2) if still too large, divide by 2.5
-                // 3) show no text
-                if (textWidth > key.width) {
-                    Log.d(TAG, "Label '"
-                            + label
-                            + "' is too large for the key. Reducing by 1.5.");
-                    paint.setTextSize(mKeyTextSize / 1.5f);
-                    textWidth = paint.measureText(label, 0, label.length());
-                    if (textWidth > key.width) {
-                        Log.d(TAG,
-                                "Label '"
-                                        + label
-                                        + "' is too large for the key. Reducing by 2.5.");
-                        paint.setTextSize(mKeyTextSize / 2.5f);
-                        textWidth = paint.measureText(label, 0, label.length());
-                        if (textWidth > key.width) {
-                            Log.d(TAG,
-                                    "Label '"
-                                            + label
-                                            + "' is too large for the key. Showing no text.");
-                            paint.setTextSize(0f);
-                            textWidth = paint.measureText(label, 0,
-                                    label.length());
-                        }
-                    }
-                }
 
                 // the center of the drawable space, which is value used
                 // previously for vertically
