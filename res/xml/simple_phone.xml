@@ -26,7 +26,7 @@
 
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="42" android:keyLabel="*" android:popupCharacters=",;N" android:keyEdgeFlags="left"/>
-        <Key android:codes="48" android:keyIcon="@drawable/sym_keyboard_num0_black" ask:longPressCode="43"/>
+        <Key android:codes="48" android:keyIcon="@drawable/sym_keyboard_num0_black" android:popupCharacters="+" android:iconPreview="@drawable/sym_keyboard_num0_black_preview"/>
         <Key android:codes="35" android:popupCharacters=",;N"/>
         <Key android:codes="10" android:keyEdgeFlags="right" ask:longPressCode="-100"/>
     </Row>
