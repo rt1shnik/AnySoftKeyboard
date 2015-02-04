@@ -55,17 +55,17 @@ public class KeyboardSwitcher {
     AnySoftKeyboard mIME;
     private final Context mContext;
 
-    private static final int SYMBOLS_KEYBOARD_REGULAR_INDEX = 1;
+    private static final int SYMBOLS_KEYBOARD_REGULAR_INDEX = 0;
     private static final int SYMBOLS_KEYBOARD_ALT_INDEX = 2;
-    private static final int SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX = 0;
-    private static final int SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX = SYMBOLS_KEYBOARD_ALT_INDEX;
+    private static final int SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX = 1;
+    private static final int SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
     private static final int SYMBOLS_KEYBOARD_NUMBERS_INDEX = 3;
     private static final int SYMBOLS_KEYBOARD_PHONE_INDEX = 4;
     private static final int SYMBOLS_KEYBOARD_DATETIME_INDEX = 5;
     private static final int SYMBOLS_KEYBOARDS_COUNT = 6;
 
     private int mMode;
-    private int mLastSelectedSymbolsKeyboard = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
+    private int mLastSelectedSymbolsKeyboard = SYMBOLS_KEYBOARD_REGULAR_INDEX;
 
     private AnyKeyboard[] mSymbolsKeyboardsArray = EMPTY_AnyKeyboards;
     // my working keyboards
@@ -545,13 +545,13 @@ public class KeyboardSwitcher {
         if (AnyApplication.getConfig().getCycleOverAllSymbols()) {
             if (!isAlphabetMode()) {
                 if (nextKeyboardIndex >= SYMBOLS_KEYBOARD_LAST_CYCLE_INDEX)
-                    nextKeyboardIndex = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
+                    nextKeyboardIndex = SYMBOLS_KEYBOARD_REGULAR_INDEX;
                 else
                     nextKeyboardIndex++;
             } else
-                nextKeyboardIndex = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
+                nextKeyboardIndex = SYMBOLS_KEYBOARD_REGULAR_INDEX;
         } else {
-            nextKeyboardIndex = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
+            nextKeyboardIndex = SYMBOLS_KEYBOARD_REGULAR_INDEX;
         }
         return nextKeyboardIndex;
     }

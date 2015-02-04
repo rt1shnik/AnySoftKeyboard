@@ -20,14 +20,14 @@
 
     <!-- checked -->
     <item android:state_checked="true" ask:key_type_feedback="true"
-          android:drawable="@drawable/sym_keyboard_shift_locked_black"/>
-    <item android:state_checked="true" android:drawable="@drawable/sym_keyboard_shift_locked_black"/>
+          android:drawable="@drawable/shift_all_caps_v2"/>
+    <item android:state_checked="true" android:drawable="@drawable/shift_all_caps_v2"/>
 
     <!-- pressed -->
-    <item android:state_pressed="true" ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_shift_on_black"/>
-    <item android:state_pressed="true" android:drawable="@drawable/sym_keyboard_shift_on_black"/>
+    <item android:state_pressed="true" ask:key_type_feedback="true" android:drawable="@drawable/shift_first_caps"/>
+    <item android:state_pressed="true" android:drawable="@drawable/shift_first_caps"/>
 
     <!-- Normal keys -->
-    <item ask:key_type_feedback="true" android:drawable="@drawable/sym_keyboard_shift_black"/>
-    <item android:drawable="@drawable/sym_keyboard_shift_black"/>
+    <item ask:key_type_feedback="true" android:drawable="@drawable/shift_lower_case"/>
+    <item android:drawable="@drawable/shift_lower_case"/>
 </selector>

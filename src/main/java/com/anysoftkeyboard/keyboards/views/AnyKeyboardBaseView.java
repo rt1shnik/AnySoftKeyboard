@@ -1434,8 +1434,7 @@ public class AnyKeyboardBaseView extends View implements
         if (mKeyboard == null)
             return;
 
-        final boolean drawKeyboardNameText = (mKeyboardNameTextSize > 1f)
-                && AnyApplication.getConfig().getShowKeyboardNameText();
+        final boolean drawKeyboardNameText = false;
 
         final boolean drawHintText = (mHintTextSize > 1)
                 && AnyApplication.getConfig().getShowHintTextOnKeys();
