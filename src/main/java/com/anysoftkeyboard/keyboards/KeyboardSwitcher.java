@@ -273,7 +273,7 @@ public class KeyboardSwitcher {
         boolean resubmitToView = true;
         AnyKeyboard keyboard = null;
 
-        if(mode == MODE_NUMBERS){
+        if(mode == MODE_NUMBERS || mode == MODE_PHONE){
             mInputView.setBackgroundResource(R.drawable.for_old_man_background_num);
         }else{
             mInputView.setBackgroundResource(R.drawable.for_old_man_background_cr);
