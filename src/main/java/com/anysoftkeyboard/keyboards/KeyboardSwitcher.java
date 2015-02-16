@@ -66,6 +66,7 @@ public class KeyboardSwitcher {
 
     private int mMode;
     private int mLastSelectedSymbolsKeyboard = SYMBOLS_KEYBOARD_REGULAR_INDEX;
+    private int mActiveKeyboardIndex = AnySoftKeyboard.mKeyboardIndex;
 
     private AnyKeyboard[] mSymbolsKeyboardsArray = EMPTY_AnyKeyboards;
     // my working keyboards
@@ -78,7 +79,7 @@ public class KeyboardSwitcher {
     // thus disabling the option to move to another layout
     private boolean mKeyboardLocked = false;
 
-    private int mLastSelectedKeyboard = 0;
+    private int mLastSelectedKeyboard = AnySoftKeyboard.mKeyboardIndex;
 
     // private int mImeOptions;
     private boolean mAlphabetMode = true;
@@ -474,11 +475,16 @@ public class KeyboardSwitcher {
             int selectedKeyboard = mLastSelectedKeyboard;
             if (isAlphabetMode())
                 selectedKeyboard++;
+            else return "Clavier";
 
             if (selectedKeyboard >= keyboardsCount)
                 selectedKeyboard = 0;
 
-            return mAlphabetKeyboardsCreators[selectedKeyboard].getName();
+            if(selectedKeyboard != AnySoftKeyboard.mKeyboardIndex) {
+                return "123";
+            }else{
+                return "Clavier";
+            }
         }
     }
 
@@ -488,19 +494,23 @@ public class KeyboardSwitcher {
 
         if (current == null) {
             final int keyboardsCount = getAlphabetKeyboards().length;
-            if (isAlphabetMode())
-                mLastSelectedKeyboard++;
+//            if (isAlphabetMode()) {
+//                mLastSelectedKeyboard++;
+//            }
 
-            mAlphabetMode = true;
+            if(mLastSelectedKeyboard == mActiveKeyboardIndex){
+                mAlphabetMode = false;
+                current = getSymbolsKeyboard(SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX, getKeyboardMode(null));
+                mLastSelectedKeyboard = AnySoftKeyboard.mKeyboardIndex + 1;
+            }else {
+                mAlphabetMode = true;
+                current = getAlphabetKeyboard(mLastSelectedKeyboard,
+                        getKeyboardMode(currentEditorInfo));
+                mLastSelectedKeyboard = AnySoftKeyboard.mKeyboardIndex;
+            }
 
-            if (mLastSelectedKeyboard >= keyboardsCount)
-                mLastSelectedKeyboard = 0;
-
-            current = getAlphabetKeyboard(mLastSelectedKeyboard,
-                    getKeyboardMode(currentEditorInfo));
-            // returning to the regular symbols keyboard, no matter what
-            mLastSelectedSymbolsKeyboard = 0;
-
+            mActiveKeyboardIndex = AnySoftKeyboard.mKeyboardIndex;
+            mLastSelectedSymbolsKeyboard = SYMBOLS_KEYBOARD_ALT_NUMBERS_INDEX;
             if (supportsPhysical) {
                 int testsLeft = keyboardsCount;
                 while (!(current instanceof HardKeyboardTranslator)
@@ -537,6 +547,8 @@ public class KeyboardSwitcher {
         mAlphabetMode = false;
         AnyKeyboard current = getSymbolsKeyboard(mLastSelectedSymbolsKeyboard,
                 getKeyboardMode(currentEditorInfo));
+
+        mLastSelectedKeyboard = AnySoftKeyboard.mKeyboardIndex + 1;
         return setKeyboard(currentEditorInfo, current);
     }
 
@@ -588,6 +600,7 @@ public class KeyboardSwitcher {
 
     private synchronized AnyKeyboard getAlphabetKeyboard(int index, int mode) {
         AnyKeyboard[] keyboards = getAlphabetKeyboards();
+        index = AnySoftKeyboard.mKeyboardIndex;
         if (index >= keyboards.length)
             index = 0;
 

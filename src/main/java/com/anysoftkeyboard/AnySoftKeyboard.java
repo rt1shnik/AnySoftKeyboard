@@ -17,6 +17,7 @@
 package com.anysoftkeyboard;
 
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -57,6 +58,7 @@ import android.widget.Toast;
 
 import com.anysoftkeyboard.LayoutSwitchAnimationListener.AnimationType;
 import com.anysoftkeyboard.api.KeyCodes;
+import com.anysoftkeyboard.backup.AnyBackupAgent;
 import com.anysoftkeyboard.devicespecific.Clipboard;
 import com.anysoftkeyboard.dictionaries.DictionaryAddOnAndBuilder;
 import com.anysoftkeyboard.dictionaries.EditableDictionary;
@@ -224,6 +226,7 @@ public class AnySoftKeyboard extends InputMethodService implements
 
     private VoiceInput mVoiceRecognitionTrigger;
     private boolean isVisible;
+    public static int mKeyboardIndex;
 
     public AnySoftKeyboard() {
         mConfig = AnyApplication.getConfig();
@@ -531,6 +534,8 @@ public class AnySoftKeyboard extends InputMethodService implements
         Log.d(TAG, "onStartInputView(EditorInfo:" + attribute.imeOptions
                     + "," + attribute.inputType + ", restarting:" + restarting
                     + ")");
+
+        mKeyboardIndex = getKeyboardIndex(getApplicationContext());
 
         isVisible = true;
         sendBroadCastToHideHideSosButton();
@@ -3666,6 +3671,31 @@ public class AnySoftKeyboard extends InputMethodService implements
             setCandidatesView(onCreateCandidatesView());
             setCandidatesViewShown(false);
         }
+    }
+
+    public static class DefaultKeyboradReciever extends BroadcastReceiver{
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            final String keyboardIndex = "keyboardIndex";
+            if(intent.hasExtra(keyboardIndex)) {
+                mKeyboardIndex = intent.getIntExtra(keyboardIndex, 0);
+                saveKeyboardIndex(context, mKeyboardIndex);
+            }
+        }
+    }
+
+    private static void saveKeyboardIndex(Context context, int index){
+        SharedPreferences sharedPref = context.getSharedPreferences("keyboardIndex", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt("index", index);
+        editor.commit();
+    }
+
+    private static int getKeyboardIndex(Context context){
+        SharedPreferences sharedPref = context.getSharedPreferences("keyboardIndex", Context.MODE_PRIVATE);
+        int index = sharedPref.getInt("index", 0);
+        return index;
     }
 
 }

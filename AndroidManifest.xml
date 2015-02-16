@@ -120,6 +120,12 @@
             android:icon="@drawable/ic_launcher"
             android:theme="@style/Theme.AskApp.Popup.NoTitle"
             android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <receiver android:name="com.anysoftkeyboard.AnySoftKeyboard$DefaultKeyboradReciever" >
+            <intent-filter>
+                <action android:name="SidonieKeyboard.setDefaultKeyboard" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

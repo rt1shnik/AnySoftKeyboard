@@ -94,7 +94,7 @@ android {
             signingConfig signingConfigs.release
 
             zipAlignEnabled true
-            debuggable false
+            debuggable true
         }
     }
     sourceSets {
