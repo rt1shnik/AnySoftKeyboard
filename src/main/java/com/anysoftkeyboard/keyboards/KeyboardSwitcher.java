@@ -619,6 +619,9 @@ public class KeyboardSwitcher {
                 keyboard.loadKeyboard(mKeyboardDimens);
             }
         }
+
+        mActiveKeyboardIndex = AnySoftKeyboard.mKeyboardIndex;
+        mLastSelectedKeyboard = AnySoftKeyboard.mKeyboardIndex;
         return keyboard;
     }
 
