@@ -5,40 +5,41 @@
           android:keyWidth="11%p"
           android:keyHeight="@integer/key_normal_height">
     <Row>
-        <Key android:codes="33" android:keyLabel="!" android:keyEdgeFlags="left"/>
-        <Key android:codes="64" android:keyLabel="\@"/>
+        <Key android:codes="64" android:keyLabel="\@" android:keyEdgeFlags="left"/>
+        <Key android:codes="58" android:keyLabel=":" android:popupCharacters=";"/>
+        <Key android:codes="95" android:keyLabel=";"/>
+        <Key android:codes="95" android:keyLabel="_"/>
+        <Key android:codes="45" android:keyLabel="-"/>
         <Key android:codes="35" android:keyLabel="\#"/>
+        <Key android:codes="40" android:keyLabel="("/>
+        <Key android:codes="41" android:keyLabel=")"/>
+        <Key android:codes="47" android:keyLabel="/" android:keyEdgeFlags="right"/>
+
+    </Row>
+
+    <Row>
+        <Key android:codes="44" android:keyLabel="," android:keyEdgeFlags="left"/>
+        <Key android:codes="33" android:keyLabel="!" />
+        <Key android:codes="95" android:keyLabel="\'" />
+        <Key android:codes="34" android:keyLabel="&quot;" android:popupCharacters="\'\u201e\u201d"/>
+        <Key android:codes="93" android:keyLabel="]"/>
+        <Key android:codes="91" android:keyLabel="["/>
+        <Key android:codes="123" android:keyLabel="{"/>
+        <Key android:codes="125" android:keyLabel="}"/>
+        <Key android:codes="92" android:keyLabel="\\" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="61" android:keyLabel="=" android:keyEdgeFlags="left"/>
+        <Key android:codes="43" android:keyLabel="+"/>
+        <Key android:codes="37" android:keyLabel="%" android:popupCharacters="‰"/>
+        <Key android:codes="42" android:keyLabel="*"/>
+        <Key android:codes="60" android:keyLabel="&lt;"/>
+        <Key android:codes="62" android:keyLabel="&gt;" />
+        <Key android:codes="94" android:keyLabel="^"/>
         <Key android:codes="@integer/default_currency_sign_unicode"
             android:keyLabel="@string/default_currency_sign"
             android:popupCharacters="@string/popup_currency_signs"/>
-        <Key android:codes="38" android:keyLabel="&amp;"/>
-        <Key android:codes="91" android:keyLabel="["/>
-        <Key android:codes="93" android:keyLabel="]"/>
-        <Key android:codes="215" android:keyLabel="×"/>
-        <Key android:codes="247" android:keyLabel="÷" android:keyEdgeFlags="right"/>
-    </Row>
-
-    <Row>
-        <Key android:codes="37" android:keyLabel="%" android:popupCharacters="‰"/>
-        <Key android:codes="94" android:keyLabel="^"/>
-        <Key android:codes="42" android:keyLabel="*"/>
-        <Key android:codes="40" android:keyLabel="("/>
-        <Key android:codes="41" android:keyLabel=")"/>
-        <Key android:codes="92" android:keyLabel="\\"/>
-        <Key android:codes="95" android:keyLabel="_"/>
-        <Key android:codes="60" android:keyLabel="&lt;"/>
-        <Key android:codes="62" android:keyLabel="&gt;" android:keyEdgeFlags="right"/>
-    </Row>
-
-    <Row>
-        <Key android:codes="34" android:keyLabel="&quot;" android:popupCharacters="\'\u201e\u201d" android:keyEdgeFlags="left"/>
-        <Key android:codes="44" android:keyLabel="," />
-        <Key android:codes="58" android:keyLabel=":" android:popupCharacters=";"/>
-        <Key android:codes="47" android:keyLabel="/"/>
-        <Key android:codes="45" android:keyLabel="-"/>
-        <Key android:codes="61" android:keyLabel="="/>
-        <Key android:codes="43" android:keyLabel="+"/>
-        <Key android:codes="@integer/key_code_arrow_right"/>
         <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
 </Keyboard>
