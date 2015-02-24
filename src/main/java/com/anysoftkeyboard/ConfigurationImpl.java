@@ -51,7 +51,7 @@ public class ConfigurationImpl implements Configuration, OnSharedPreferenceChang
     private final Context mContext;
 
 
-    private String mDomainText = ".com";
+    private String mDomainText = ".fr";
     //private String mLayoutChangeKeysSize = "Small";
     private boolean mShowKeyPreview = true;
     private boolean mKeyPreviewAboveKey = true;
@@ -340,7 +340,7 @@ public class ConfigurationImpl implements Configuration, OnSharedPreferenceChang
         mFirstTimeCurrentVersionInstalled = sp.getLong(mContext.getString(R.string.settings_key_first_time_current_version_installed), 0);
 
         //now real settings
-        mDomainText = sp.getString("default_domain_text", ".com");
+        mDomainText = sp.getString("default_domain_text", ".fr");
         Log.d(TAG, "** mDomainText: " + mDomainText);
 
         mShowKeyPreview = sp.getBoolean(mContext.getString(R.string.settings_key_key_press_shows_preview_popup),
