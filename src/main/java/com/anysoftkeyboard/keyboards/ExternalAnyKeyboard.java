@@ -334,66 +334,66 @@ public class ExternalAnyKeyboard extends AnyKeyboard implements
 
 		if ((aKey.codes != null) && (aKey.codes.length > 0)) {
 			switch ((char) aKey.codes[0]) {
-				case 'a':
-					aKey.popupCharacters = "\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u0105";// "àáâãäåæą";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
+//				case 'a':
+//					aKey.popupCharacters = "\u00e0\u00e1\u00e2\u00e3\u00e4\u00e5\u00e6\u0105";// "àáâãäåæą";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
 				case 'c':
-					aKey.popupCharacters = "\u00e7\u0107\u0109\u010d";// "çćĉč";
+					aKey.popupCharacters = "\u00e7";// "ç";
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
-				case 'd':
-					aKey.popupCharacters = "\u0111"; // "đ";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
+//				case 'd':
+//					aKey.popupCharacters = "\u0111"; // "đ";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
 				case 'e':
-					aKey.popupCharacters = "\u00e8\u00e9\u00ea\u00eb\u0119\u20ac\u0113";// "èéêëę€";
+					aKey.popupCharacters = "\u00e8\u00e9\u0113";// "èé";
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
-				case 'g':
-					aKey.popupCharacters = "\u011d";// "ĝ";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
-				case 'h':
-					aKey.popupCharacters = "\u0125";// "ĥ";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
+//				case 'g':
+//					aKey.popupCharacters = "\u011d";// "ĝ";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
+//				case 'h':
+//					aKey.popupCharacters = "\u0125";// "ĥ";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
 				case 'i':
-					aKey.popupCharacters = "\u00ec\u00ed\u00ee\u00ef\u012B";// "ìíîïł";
+					aKey.popupCharacters = "\u00ee\u00ef";// "îï";
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
-				case 'j':
-					aKey.popupCharacters = "\u0135";// "ĵ";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
-				case 'l':
-					aKey.popupCharacters = "\u0142";// "ł";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
+//				case 'j':
+//					aKey.popupCharacters = "\u0135";// "ĵ";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
+//				case 'l':
+//					aKey.popupCharacters = "\u0142";// "ł";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
 				case 'o':
-					aKey.popupCharacters = "\u00f2\u00f3\u00f4\u00f5\u00f6\u00f8\u0151\u0153\u014D";// "òóôõöøőœ";
+					aKey.popupCharacters = "\u00f4\u00f6\u0153";// "ôöœ";
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
-				case 's':
-					aKey.popupCharacters = "\u00a7\u00df\u015b\u015d\u0161";// "§ßśŝš";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
+//				case 's':
+//					aKey.popupCharacters = "\u00a7\u00df\u015b\u015d\u0161";// "§ßśŝš";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
 				case 'u':
-					aKey.popupCharacters = "\u00f9\u00fa\u00fb\u00fc\u016d\u0171\u016B";// "ùúûüŭű";
+					aKey.popupCharacters = "\u00f9\u00fc";// "ùü";
 					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
 					break;
-				case 'n':
-					aKey.popupCharacters = "\u00f1";// "ñ";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
-				case 'y':
-					aKey.popupCharacters = "\u00fd\u00ff";// "ýÿ";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
-				case 'z':
-					aKey.popupCharacters = "\u017c\u017e\u017a";// "żžź";
-					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
-					break;
+//				case 'n':
+//					aKey.popupCharacters = "\u00f1";// "ñ";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
+//				case 'y':
+//					aKey.popupCharacters = "\u00fd\u00ff";// "ýÿ";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
+//				case 'z':
+//					aKey.popupCharacters = "\u017c\u017e\u017a";// "żžź";
+//					aKey.popupResId = com.android.marrowbone.anysoftboard.R.xml.popup_one_row;
+//					break;
 				default:
 					super.setPopupKeyChars(aKey);
 			}
