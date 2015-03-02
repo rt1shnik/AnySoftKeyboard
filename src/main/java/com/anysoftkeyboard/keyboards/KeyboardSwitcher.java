@@ -183,7 +183,7 @@ public class KeyboardSwitcher {
                             "phone_symbols_keyboard", mode, false);
                     break;
                 case SYMBOLS_KEYBOARD_NUMBERS_INDEX:
-                    keyboard = new GenericKeyboard(mContext, R.xml.simple_numbers,
+                    keyboard = new GenericKeyboard(mContext, R.xml.simple_numbers_v2,
                             mContext.getString(R.string.symbols_numbers_keyboard),
                             "numbers_symbols_keyboard", mode, false);
                     break;
