@@ -20,7 +20,7 @@
     <Row>
         <Key android:codes="44" android:keyLabel="," android:keyEdgeFlags="left"/>
         <Key android:codes="33" android:keyLabel="!" />
-        <Key android:codes="39" android:keyLabel="\'" />
+        <Key android:codes="38" android:keyLabel="&amp;" />
         <Key android:codes="34" android:keyLabel="&quot;" android:popupCharacters="\'\u201e\u201d"/>
         <Key android:codes="93" android:keyLabel="]"/>
         <Key android:codes="91" android:keyLabel="["/>
